@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <title>Tum Tum's Spot</title>
   <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
   <div class="center background">
-    <h1 style="padding-top:10px;">Have<em>You seen this man?!</em></h1>
+    <h1 style="padding-top:10px;">Have <em>You</em> seen this man?!</h1>
     <img src="tumtumangry.jpg.png" alt="Picture or Tum Tum" style="width:200px; height:300px; padding-top:15px;">
     <H1>Tum Tum Uchiha</H1>
     <hr>
@@ -19,12 +21,26 @@
   </div>
 
   <script type="text/javascript">
+
+  //silly loop
     let i = 0;
     let x = 10;
     while (i < x) {
       console.log(i);
       i++;
     }
+
+
+
+
+  //makes the background moves
+    $(function(){
+      var x = 0;
+      setInterval(function(){
+          x-=1;
+          $('body').css('background-position', x + 'px 0');
+      }, 50);
+  })
   </script>
 
 </body>

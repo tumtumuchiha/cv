@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Talk to Tum Tum</title>
   <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,28 @@
       </form>
     </div>
     <a href="index.html"> Return home </a>
+    <script type="text/javascript">
+
+    //silly loop
+      let i = 0;
+      let x = 10;
+      while (i < x) {
+        console.log(i);
+        i++;
+      }
+
+
+
+
+    //makes the background moves
+      $(function(){
+        var x = 0;
+        setInterval(function(){
+            x-=1;
+            $('body').css('background-position', x + 'px 0');
+        }, 50);
+    })
+    </script>
   </div>
 </body>
 
