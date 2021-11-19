@@ -1,11 +1,55 @@
 .center {
-
   margin: 0 auto;
   text-align: center;
 }
 
 .centercont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url("cloud.png");
+}
+
+h1 {
+  color: #13BAB3;
+}
+
+h3 {
+  color: #13BAB3;
+}
+
+p {
+  color: #13BAB3;
+}
+
+label{
+  color: #13BAB3;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spinner {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out
+}
+
+.spinner:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.background{
+  width: 70%;
+  height: 100%;
+  color: white;
+  background-color: white;
+
 }
